@@ -24,5 +24,147 @@
 此代码写出了一个半圆    100px 100px 表示的是左边的半径跟右边的半径。
 border-top-left-radius:10px 20px  
 此代码表示圆角左上方的x轴跟y轴的值，这个里可以自行调整
+二、border-shadow
+x轴的偏移量  y轴的偏移量  [阴影模糊半径] [调整阴影的大小扩展半径]  [..color] [..方式]
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Css3</title>
+  <style>
+     *{
+	  margin:0;
+	  padding:0
+	 }
+     div{
+	  width:200px;
+	  height:100px;
+	  background-color:red;
+          border-radius:100px 100px 0 0;
+	  box-shadow:10px 10px 4px 10px red  inset（向内投影）;
+	 }
+  </style>
+ </head>
+ <body>
+
+   <div></div>
+ </body>
+</html>
+
+text-shadow  x y  blur[模糊程度] color[阴影颜色]
+*值得注意的是shadow是性能杀手，尽量少用
+
+关于 rgb（0-255,0-255,0-255,0.1-1）；
+红  绿  蓝 透明 
+自己调
+
+
+渐变的背景颜色 
+      1、线性渐变（linear-to）
+      <!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Css3</title>
+  <style>
+     *{
+	  margin:0;
+	  padding:0;
+	  list-style-type:none;
+	 }
+	 .ls{
+	  width:100px;
+	  height:100px;
+	  background:linear-gradient(to top,red,green);
+	  margin:100px;
+	 }
+  </style>
+ </head>
+ <body>
+       <div class="ls">
+	    
+      </div>
+ </body>
+</html>
+  background:linear-gradient(to top,red,green);背景向上渐变，从红色到绿色；
+  =====================================================================
+  background:linear-gradient(133deg,red,green);133deg为角度
+  =====================================================================
+  background:linear-gradient(133deg,red 10%,green 10%,yellow 30%,pink 50%);
+  解释一下：角度为133deg,红色从10%的地方渐变，绿色也是占10%，后面意思相同。
+  
+   background:radial-gradient(circle 100px at center,red 10%,green 20%,yellow 80%,pink 99%,transparent 100%);
+   
+   =>
+   word-break:break-word;
+   font-family:""
+   @font-face{
+    font-family:"",
+    src:url("");
+    
+   }
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Css3</title>
+  <style>
+     *{
+	  margin:0;
+	  padding:0;
+	  list-style-type:none;
+	 }
+	 div{
+	  width:640px;
+	  height:915px;
+	  border:20px solid #000;
+	  background:#0000;
+	  background-image:url("demo1.jpeg");
+	  background-repeat:no-repeat;
+	  background-size:cover;
+	  border-image:url("demo1.jpeg") 10  round;
+	  margin:20px 30px
+
+	 }
+  </style>
+ </head>
+ <body>
+   <div></div>
+ </body>
+</html>
+
+   border-image边框的背景图片
+   border-image:url("demo1.jpeg") 10  repeat;
+   border-image:url("demo1.jpeg") 10  round;这个会平铺
+   10 代表尺寸吧
+  
+   
+   
+   背景图的起始位置：
+   背景图片默认是从padding区域去引入的，
+   border-origin:border-box;//从border区域进行引入
+   border-origin：content-box；从中心引入 
+   
+   
+   裁剪背景图片：
+   backgroudn-clip：border-box|| content-box  || padding-box ||
+   
+   
+   background-size：100%  100%
+   
+   
+   background-position：x y
+   
+   
+   background-positon：center center[调整背景图片的位置]
+   
+   
+   
+   
+   
+     
+   
+  
+
 
 
