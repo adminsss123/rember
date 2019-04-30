@@ -1,1 +1,28 @@
+一、border-radius的用法
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Css3</title>
+  <style>
+     *{
+	  margin:0;
+	  padding:0
+	 }
+    div{
+	  width:200px;
+	  height:100px;
+	  background-color:red;
+    border-radius:100px 100px 0 0
+	 }
+  </style>
+ </head>
+ <body>
+   <div></div>
+ </body>
+</html>
+此代码写出了一个半圆    100px 100px 表示的是左边的半径跟右边的半径。
+border-top-left-radius:10px 20px  
+此代码表示圆角左上方的x轴跟y轴的值，这个里可以自行调整
+
 
