@@ -27,3 +27,38 @@
     </script>
   </body>
 </html>
+
+==========================================================================>
+box-sizing: border-box；限制了padding和border对盒子原有大小的改变
+
+calc((100% - 600px)/4)css3 的计算属性，相当好用
+
+css3 flex布局
+1、只要给需要伸展的盒子加上display：flex；
+又或者是行内元素display :inline-flex;
+同时还要注意浏览器的兼容，不过webpack一般会给你做好这些，你无需担心
+
+2、那么我们看一下flex-direction属性，这个属性决定了主轴的方向，目前有四个属性
+row：这个值为默认值，主轴为水平方向，起点在左端。
+row-reverse：主轴为水平方向，起点在右端。
+column：主轴为垂直方向，起点在上沿。
+column-reverse：主轴为垂直方向，起点在下沿。
+
+3、flex-wrap属性     默认情况下，项目都排在一条线（又称"轴线"）上。
+flex-wrap属性定义，如果一条轴线排不下，如何换行。
+他有三个属性
+nowrap（默认）：不换行。
+wrap：换行，第一行在上方。
+wrap-reverse：换行，第一行在下方
+
+4、flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。
+
+5、下面看个布局属性
+      justify-content属性定义了项目在主轴上的对齐方式。
+      以下是他的五个属性值
+      flex-start（默认值）	左对齐
+      flex-end	右对齐
+      center	居中
+      space-between	两端对齐，项目之间的间隔都相等。
+      space-around	每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+
