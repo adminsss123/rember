@@ -61,4 +61,66 @@ wrap-reverse：换行，第一行在下方
       center	居中
       space-between	两端对齐，项目之间的间隔都相等。
       space-around	每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+      
+      
+      ==================================================================================================》
+      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>New File</title>
+    <link rel="shortcut icon" href="favicon1.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        width: 500px;
+        height: 500px;
+        border: 1px solid red;
+      }
+      ul>li {
+        content: "";
+        clear: both;
+        position: relative;
+      }
+      ul > li > a {
+        text-decoration: none;
+        width: 200px;
+        height: 80px;
+        display: inline-block;
+
+        background-size: 100% 96%;
+        line-height: 75px;
+        text-align: center;
+        font-size: 18px;
+        color: cornsilk;
+        margin: 0;
+        background-color: #0000;
+        box-sizing: border-box;
+      }
+      ul > li:nth-of-type(1) > a {
+        background-image: url("./deviceIP.png");
+      }
+      ul > li:nth-of-type(1) > a:hover {
+        background-image: url("./deviceIP1.png");
+        background-size: 100% 110%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="#">英雄联盟</a>
+      </li>
+      <li></li>
+    </ul>
+    <script></script>
+  </body>
+</html>
+clear: both  必要时可以试试清除浮动 也可以用伪元素
+
 
